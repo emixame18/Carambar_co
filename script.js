@@ -25,7 +25,10 @@ function getRandomJoke() {
     const randomIndex = Math.floor(Math.random() * jokes.length);
     return jokes[randomIndex];
 }
-
+function displayAllJokes() {
+    console.table(jokes);
+  }
+  displayAllJokes();
 const jokeButton = document.getElementById("jokeButton");
 const jokeContainer = document.getElementById("jokeContainer");
 
