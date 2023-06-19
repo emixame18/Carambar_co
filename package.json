@@ -1,7 +1,9 @@
 {
   "dependencies": {
     "express": "^4.18.2",
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.22",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
   },
   "name": "caranbar_co",
   "version": "1.0.0",
@@ -20,5 +22,6 @@
     "url": "https://github.com/emixame18/Caranbar_co/issues"
   },
   "homepage": "https://github.com/emixame18/Caranbar_co#readme",
-  "description": ""
+  "description": "but du projet mise en ligne d'une mini application web pour généré des blagues \r projet hébergé sur render.com pour un projet de API pour Carambar & Co",
+  "keywords": []
 }
