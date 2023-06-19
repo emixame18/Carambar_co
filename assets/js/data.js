@@ -1,43 +1,54 @@
-const data = [
+const Blagues = [
     {
-      "question": "Quelle est la femelle du hamster ?",
-      "reponse" : "L'Amsterdam"
-     
+      id: 1,
+      question: "Quelle est la femelle du hamster ?",
+      reponse: "L'Amsterdam"
     },
     {
-        "question": "Que dit un oignion quand il se cogne ?",
-        "reponse" : "aïe"
+      id: 2,
+      question: "Que dit un oignon quand il se cogne ?",
+      reponse: "Aïe"
     },
     {
-        "question": "Quelle est l'animal le plus heureux  ?",
-        "reponse" : "le hiboux, par ce que sa femme est chouette"
+      id: 3,
+      question: "Quelle est l'animal le plus heureux ?",
+      reponse: "Le hibou, parce que sa femme est chouette"
     },
     {
-        "question": "pourquoi le football et rigolo ?",
-        "reponse" : "parce que thierry en rit"
+      id: 4,
+      question: "Pourquoi le football est rigolo ?",
+      reponse: "Parce que Thierry en rit"
     },
     {
-        "question": "quel est le sport le plus fruiter ?",
-        "reponse" : "la boxe, par ce que tu te prend des pêches dans la poire et tu tombes dans les pommes"
+      id: 5,
+      question: "Quel est le sport le plus fruiter ?",
+      reponse: "La boxe, parce que tu te prends des pêches dans la poire et tu tombes dans les pommes"
     },
     {
-        "question": "que se fait un schtroumpf quand il tombe ?",
-        "reponse" : "un bleu"
-    },{
-        "question": "quel est le comble pour un marin ?",
-        "reponse" : "avoir le nez qui coule"
+      id: 6,
+      question: "Que fait un Schtroumpf quand il tombe ?",
+      reponse: "Il devient bleu"
     },
     {
-        "question": "qu'est ce que les enfants usent le plus a l'école ?",
-        "reponse" : "le professeur"
-    },{
-        "question": "quel est le sport le plus silencieux ?",
-        "reponse" : "le para-chuuuuuuuuuuut !"
+      id: 7,
+      question: "Quel est le comble pour un marin ?",
+      reponse: "Avoir le nez qui coule"
     },
     {
-        "question": "quel est le comble pour un jour de bowling ?",
-        "reponse" : "c'est de perdre la boule"
+      id: 8,
+      question: "Qu'est-ce que les enfants utilisent le plus à l'école ?",
+      reponse: "Le professeur"
+    },
+    {
+      id: 9,
+      question: "Quel est le sport le plus silencieux ?",
+      reponse: "Le para-chuuuuuuuuuuut !"
+    },
+    {
+      id: 10,
+      question: "Quel est le comble pour un jour de bowling ?",
+      reponse: "C'est de perdre la boule"
     }
-    
-  ]
-   module.exports = data;
+  ];
+  
+  module.exports = Blagues;
