@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const specs = require('./swagger');
 
 const Blagues = require('./data.js');
 
@@ -31,6 +32,7 @@ app.get('/Blagues/random', (req, res) => {
   res.json(randomJoke);
 });
 
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
 app.listen(3000, () => {
   console.log('Serveur en cours d\'écoute sur le port 3000');
 });
