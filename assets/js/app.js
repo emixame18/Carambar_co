@@ -1,38 +1,20 @@
 const express = require('express');
-const app = express();
+const swaggerUi = require('swagger-ui-express');
 const specs = require('./swagger');
 
-const Blagues = require('./data.js');
+const app = express();
+const PORT = 3000;
 
-app.get('/', (req, res) => {
-  res.send('Bienvenue sur l\'API Carambar !');
+// Routes
+app.get('/api/joke', (req, res) => {
+  // Votre logique de récupération d'une blague
+ 
+  res.json({ joke });
 });
 
-// Route pour afficher toutes les blagues
-app.get('/Blagues', (req, res) => {
-  res.json(Blagues);
-});
-
-// Route pour afficher une blague par ID
-app.get('/Blagues/:id', (req, res) => {
-  const id = parseInt(req.params.id);
-  const blague = Blagues.find(b => b.id === id);
-
-  if (blague) {
-    res.json(blague);
-  } else {
-    res.status(404).json({ message: 'Blague non trouvée' });
-  }
-});
-
-// Route pour afficher une blague aléatoire
-app.get('/Blagues/random', (req, res) => {
-  const randomIndex = Math.floor(Math.random() * Blagues.length);
-  const randomJoke = Blagues[randomIndex];
-  res.json(randomJoke);
-});
-
+// Middleware Swagger
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(specs));
-app.listen(3000, () => {
-  console.log('Serveur en cours d\'écoute sur le port 3000');
+
+app.listen(PORT, () => {
+  console.log(`Serveur démarré sur le port ${PORT}`);
 });
