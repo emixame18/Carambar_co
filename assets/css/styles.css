@@ -6,15 +6,26 @@ body {
   }
   
   .container {
-    max-width: 600px;
+    max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: auto;
     text-align: center;
     background-color: #1b7aa7;
 }
-
+form {
+  max-width: auto;
+  margin: 0 auto;
+  padding:  auto;
+  text-align: center;
+  background-color: #1b7aa7;
+}
 h1 {
     color: #000;
+}
+p {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 button {
@@ -30,13 +41,16 @@ button {
     margin-top: 20px;
     font-size: 18px;
     font-weight: bold;
+    white-space: pre-line;
 }
   
   .btLink {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    color: #ff0000;
+    display: inline-block;
+  color: #ff0000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
     text-decoration: none;
   }
   
